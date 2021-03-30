@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300');
+
 :root{
     --primary-color: rgb(81, 81, 190);
     --width-break: 600px;
 }
 
 *{
+    background-image: url(/lib/binary.webp);
+    background-size: cover;
     box-sizing: border-box;
     margin: 0px;
+    font-family: 'Comic Neue', cursive;
+
     
 }
 
@@ -13,6 +19,8 @@
     background-color: var(--primary-color);
     display: block;
     text-align: center;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .navigation h1{
@@ -29,6 +37,7 @@ section {
     margin: 1rem;
     height: 15vh;
     width: 80%;
+    background: chartreuse;
 }
 
 #btn-translate {
@@ -55,8 +64,11 @@ section {
     bottom: 0;
     text-align: center;
     padding: 3rem;
+    
 }
 
-.footer p{
+.footer .p{
+    display: block;
+    text-align: center;
     max-width: var(--width-break);
 }
