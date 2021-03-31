@@ -1,74 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300');
 
-:root{
+:root {
     --primary-color: rgb(81, 81, 190);
+    --secondary-color: rgb(107, 146, 172);
+    --black: rgb(0, 0, 0);
     --width-break: 600px;
 }
 
-*{
-    background-image: url(/lib/binary.webp);
-    background-size: cover;
-    box-sizing: border-box;
-    margin: 0px;
+* {
+    
+    /* box-sizing: border-box; */
+    margin:0px;
     font-family: 'Comic Neue', cursive;
-
     
 }
 
 .navigation {
     background-color: var(--primary-color);
-    display: block;
-    text-align: center;
+    /* display: block; */
     font-weight: bolder;
     font-size: larger;
+    color: white;
+    background-image: url(/lib/binary.webp);
+    background-size: cover;
+    background-blend-mode:soft-light;
 }
 
-.navigation h1{
+.navigation img{
+    display: inline;
+    height: 80px;
+    width: 80px;
+    position:fixed;
+    top:0;
+    margin: 0.5rem;
+}
+.navigation h1 {
     padding: 2rem;
+    /* position: relative; */
+    text-align: center;    
+
 }
 
-section {
+
+section{
+    background-color: lightblue;
+}
+section .container{
     margin: auto;
     padding: 1rem;
     max-width: var(--width-break);
-}
+    
+    }
+
 #input {
     display: block;
     margin: 1rem;
-    height: 15vh;
+    margin-top: 2rem;
+    height: 17vh;
     width: 80%;
-    background: chartreuse;
+    color: var(--black);
 }
 
 #btn-translate {
     width: 80%;
     margin: 1rem;
+    background: var(--secondary-color);
+    font-size: large;
+    font-weight: bold;
+    /* color: var(--black); */
+    color: white;
+    background-image: url(/lib/binary.webp);
+    background-size: cover;
+    background-blend-mode:overlay;
 }
 
-.output-down {
-    margin:1rem;
-}
-
-#output{
+#output {
     border: 1px solid rgb(60, 60, 190);
     display: block;
     margin: 1rem;
+    margin-bottom: 2.3rem;
     height: 15vh;
     width: 80%;
+    overflow: scroll;
+    color: var(--black);
+    background-color: white;
 }
 
-.footer{
+.footer {
     background-color: var(--primary-color);
-    position:fixed;
+    position: fixed;
     width: 100%;
     bottom: 0;
     text-align: center;
-    padding: 3rem;
-    
+    padding: 2rem;
+    color: white;
+    background-image: url(/lib/binary.webp);
+    background-size: cover;
+    background-blend-mode:soft-light;
 }
 
-.footer .p{
+.footer .p {
     display: block;
     text-align: center;
     max-width: var(--width-break);
+}
+footer small{
+    display: block;
+    
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
