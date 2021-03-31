@@ -6,7 +6,7 @@ var outputDiv = document.querySelector("#output");
 var serverURL = "https://api.funtranslations.com/translate/binary.json"
 
 function errorHandler(error){
-    alert("Something wrong. Try again later!!" + error)
+    alert("Something wrong. Try again later!!  " + error)
 }
 
 function translationURL(text) {
