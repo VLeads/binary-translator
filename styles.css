@@ -92,22 +92,23 @@ section .container{
     width: 100%;
     bottom: 0;
     text-align: center;
+    margin:0px;
     padding: 2rem;
     color: white;
     background-image: url(/lib/binary.webp);
     background-size: cover;
     background-blend-mode:soft-light;
+    
 }
 
-.footer .p {
-    display: block;
-    text-align: center;
+.footer p{
+    display: block;    
+   margin: auto;
     max-width: var(--width-break);
 }
 footer small{
     display: block;
-    
-    padding: 1rem;
+    padding: 0.4rem;
 }
 
 a {
